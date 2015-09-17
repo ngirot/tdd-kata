@@ -14,18 +14,6 @@
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-	<!-- Code syntax highlighting -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
-
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement( 'link' );
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName( 'head' )[0].appendChild( link );
-	</script>
-	
 	<title>Kata TDD</title>
 </head>
 <body>
@@ -95,24 +83,6 @@
 					</ul>
 			</section>
 
-			<section>
-				<section>
-					<h2>Outils</h2>
-				</section>
-
-				<section>
-					<h2>Java</h2>
-					<pre>
-						<code data-trim class="">@Test public void un_nom_tres_parlant() {}</code>
-					</pre>
-					<ul>
-						<li>FestAssert</li>
-						<li>Mockito</li>
-					</ul>
-
-				</section>
-
-			</section>
 
 			<section>
 				<section>
@@ -156,7 +126,6 @@
 	<script src="js/reveal.js"></script>
 
 	<script>
-
 		// Full list of configuration options available at:
 		// https://github.com/hakimel/reveal.js#configuration
 		Reveal.initialize({
@@ -167,17 +136,6 @@
 
 			transition: 'slide', // none/fade/slide/convex/concave/zoom
 		});
-
-		// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-
 	</script>
 </body>
 </html>
